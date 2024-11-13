@@ -6,15 +6,74 @@
 /*   By: pokpalae <pokpalae@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:02:56 by pokpalae          #+#    #+#             */
-/*   Updated: 2024/11/07 15:31:24 by pokpalae         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:17:04 by pokpalae         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include <iostream>
 #include <cctype>
+#include <string>  
 
-int	main(int argc, char **argv)
+
+
+
+int main(int argc, char **argv) 
+{
+	std::string::size_type j;
+
+	int i;
+
+    if (argc == 1) 
+	{
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << '\n';
+    } 
+	
+	else 
+	{
+        i = 1;
+        while (i < argc)
+		{ 
+            std::string arg = argv[i];
+            j = 0;
+            while (j < arg.size())
+			{  
+                arg[j] = std::toupper(static_cast<unsigned char>(arg[j]));
+                j++;
+            }
+            std::cout << arg;
+            i++;
+        }
+        std::cout << std::endl;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*int	main(int argc, char **argv)
 {
 	int	i = 1;
 	int	j = 0;
@@ -44,4 +103,4 @@ int	main(int argc, char **argv)
 	 std::cout << std::endl;
 	
 	return 0;
-}
+}*/
