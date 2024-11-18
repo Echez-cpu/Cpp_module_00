@@ -6,7 +6,7 @@
 /*   By: pokpalae <pokpalae@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:02:56 by pokpalae          #+#    #+#             */
-/*   Updated: 2024/11/13 21:17:04 by pokpalae         ###   ########.fr       */
+/*   Updated: 2024/11/18 14:18:50 by pokpalae         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int main(int argc, char **argv)
                 j++;
             }
             std::cout << arg;
+			std::cout << " ";
             i++;
         }
         std::cout << std::endl;
